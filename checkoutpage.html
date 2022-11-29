@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minority Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+</head>
+  <body>
+    <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg nabvar-light bg-light position-fixed top-0 start-0 w-100">
+    <div class="container">
+        <a class="navbar-brand d-lg-none" href="#">MinorityArt</a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#toggleMobileMenu" 
+            	aria-controls="toggleMobileMenu" 
+            	aria-expanded="false" 
+            	aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-2 flex-column" id="toggleMobileMenu">
+            <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-dark" type="submit"> 
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a class="navbar-brand d-none d-lg-block" href="./index.html">MinorityArt</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link mx-2" href="#">
+                            <i class="fas fa-user"></i> My Account</a>
+                    </li>
+                    <li class="nav-item d-flex aling-items-center">
+                        <a class="nav-link mx-2" href="/cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-value">0</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-block w-100">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center pt-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./productlist.html">Clothing</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./productlist.html">New Arrivals</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+ 
+    <!-- Checkout -->
+    <div class="container col-8 my-5 br-2 rounded">
+        <div class="row g-3">
+            <div class="col-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-item-center">
+                    <span class="text-muted">Your Cart</span>
+                    <span class="badge bg-secondary rounded-pill">5</span>
+                </h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Product name</h6>
+                            <span class="text-muted">Brief Description</span>
+                        </div>
+                        <span class="text-muted">US $500</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Second Product</h6>
+                            <span class="text-muted">Brief Description</span>
+                        </div>
+                        <span class="text-muted">US $200</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Third Product</h6>
+                            <span class="text-muted">Brief Description</span>
+                        </div>
+                        <span class="text-muted">US $600</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="text-success">Promo Code</h6>
+                            <span class="text-muted">Sale10</span>
+                        </div>
+                        <span class="text-muted">US -$100</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Total (US)</h6>
+                        </div>
+                        <span class="text-muted">US $1200</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <h4>Billing Address</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label" for="firstname">First Name</label>
+                            <input type="text" id="firstname" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="lastname">Last name</label>
+                            <input type="text" id="lastname" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label class="from-label" for="username">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="usrname">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="email">Email
+                                <span class="text-muted"> (Optional)</span>
+                            </label>
+                            <input type="text" id="email" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="address">Address </label>
+                            <input type="text" id="address" class="form-control">
+                        </div>
+                        <div class="col-5">
+                            <label class="form-label" for="country">Country </label>
+                            <select class="form-select" id="country">
+                                <option>Choose</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="state">State </label>
+                            <select class="form-select" id="state">
+                                <option>Choose</option>
+                                <option>New York</option>
+                                <option>New Jersey</option>
+                                <option>Conneticut</option>
+                                <option>Maryland</option>
+                                <option>Florida</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="zip">Zip </label>
+                            <input type="text" id="zip" class="form-control">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Shipping address is the same as my billing address</label>
+                    </div>
+                    <hr>
+                    <h4>Payment</h4>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Credit Card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Debit Card</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label" for="cardname">Name on Card </label>
+                            <input type="text" id="cardname" class="form-control">
+                            <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="creditcard">Credit Card Number </label>
+                            <input type="text" id="creditcard" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="expiration">Expiration </label>
+                            <input type="text" id="expiration" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="cvv">CVV </label>
+                            <input type="text" id="cvv" class="form-control">
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Checkout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+       <div class="container text-center">
+        <section class="my-3 mx-auto py-5" style="max-width: 25em;">
+            <h2>Join our Newsletter List</h2>
+            <form class="d-flex my-4">
+                <input class="form-control me-2" type="search" placeholder="Enter your email">
+            </form>
+        </section>
+                </div>
+
+    <!-- Footer -->
+    <footer class="container d-flex justify-content-between my-5 text-start flex-wrap">
+        <ul class="nav flex-column">
+            <li class="fw-bold nav-item">
+                <a href="#" class="nav-link text-dark">Product</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Clothing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Shoes</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Accessories</a>
+            </li>
+        </ul>
+        <ul class="nav flex-column">
+            <li class="fw-bold nav-item">
+                <a href="#" class="nav-link text-dark">Help</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Shopping Guide</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Product Care</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Return Policy</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="nav flex-column">
+            <li class="fw-bold nav-item">
+                <a href="#" class="nav-link text-dark">Content</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Career</a>
+            </li>
+        </ul>
+        <ul class="nav flex-column">
+            <li class="fw-bold nav-item">
+                <a href="#" class="nav-link text-dark">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Legal Notice</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Terms of Use</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-muted"> Policy</a>
+            </li>
+        </ul>
+    </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+    <script src="/checkout.js"></script>
+</body>
+</html>
